@@ -1,2 +1,2 @@
 
-print("Hello world Santhosh kumar DC !!!")
+print("Hello world Santhosh kumar DC !")
