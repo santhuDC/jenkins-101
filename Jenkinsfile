@@ -32,5 +32,18 @@ pipeline {
                 '''
             }
         }
+        post {
+        success {
+            script {
+                slackSend(channel: "my_first_jenkins_pipelines", message: "my_first_jenkins_pipelines passed successfully")
+                    }
+                }
+        failure {
+            script {
+                slackSend(channel: "my_first_jenkins_pipelines", message: "my_first_jenkins_pipelines Falied ")
+                    }
+                }
+            }
+        
     }
 }
