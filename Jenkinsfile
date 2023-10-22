@@ -4,9 +4,6 @@ pipeline {
             label 'dockertest'
             }
       }
-    triggers {
-        pollSCM '*/5 * * * *'
-    }
     stages {
         stage('Build') {
             steps {
