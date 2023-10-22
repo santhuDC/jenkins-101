@@ -31,8 +31,9 @@ pipeline {
                 echo "doing delivery stuff.."
                 '''
             }
-        }
-        post {
+        }   
+    }
+    post {
         success {
             script {
                 slackSend(channel: "my_first_jenkins_pipelines", message: "my_first_jenkins_pipelines passed successfully")
@@ -44,6 +45,4 @@ pipeline {
                     }
                 }
             }
-        
-    }
 }
